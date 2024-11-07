@@ -18,12 +18,11 @@ spec:
           resources:
             requests:
               cpu: "100m"
-              memory: "200Mi"
+              memory: "128Mi"
             limits:
               cpu: "200m"
               memory: "256Mi"
-          command: ["stress"]
-          args: ["--vm", "1", "--vm-bytes", "250M", "--vm-hang", "1"]
+
 
 ---
 apiVersion: autoscaling/v2
